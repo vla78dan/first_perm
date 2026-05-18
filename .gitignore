@@ -1,0 +1,47 @@
+cat > .gitignore << 'EOF'
+# Логи и временные файлы
+*.log
+*.pot
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# База данных SQLite (если вы её используете)
+db.sqlite3
+db.sqlite3-journal
+
+# Папка с загруженными пользователями файлами (медиа)
+media/
+products/
+
+# Файлы с локальными настройками (пароли, секреты)
+local_settings.py
+.env
+.venv
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Папка со статикой после сборки (если вы её собираете)
+staticfiles/
+static_cdn/
+
+# Отчеты тестирования и покрытия
+htmlcov/
+.tox/
+.coverage
+.pytest_cache/
+.mypy_cache/
+
+# Настройки IDE (PyCharm, VSCode)
+.idea/
+.vscode/
+*.sublime-*
+
+# Файлы ОС
+.DS_Store
+Thumbs.db
+EOF
